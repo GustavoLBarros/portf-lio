@@ -277,10 +277,22 @@ h2 {
     transform: perspective(1000px);
 }
 
-#projeto1:hover, #projeto2:hover, #projeto3:hover{
-    cursor: none; 
+#projeto1:hover{
+    box-shadow: 0 15px 30px rgba(0, 60, 255, 0.3);  
     transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    cursor: none; 
+}
+
+#projeto2:hover{
+    box-shadow: 0 15px 30px rgba(255, 51, 0, 0.3);  
+    transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) scale(1.02);
+    cursor: none; 
+}
+
+#projeto3:hover{
+    box-shadow: 0 15px 30px rgba(0, 255, 42, 0.3);  
+    transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) scale(1.02);
+    cursor: none; 
 }
 
 .titulo-projeto {
