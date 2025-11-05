@@ -1,5 +1,5 @@
 html {
-    width: 100%; 
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
@@ -11,7 +11,8 @@ body {
     font-family: 'Sora', sans-serif; 
     min-height: 100vh;
     position: relative; 
-    overflow-x: hidden;
+    width: 100%;
+    overflow-x: hidden; 
 } 
 
 body::before {
@@ -67,18 +68,33 @@ header {
 .sociais {
     display: flex;
     gap: 16px;
+    padding-top: 16px;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 4px;
+    text-align: center;
 }
 
 #icon-social {
-    margin-top: 16px;
     width: 24px; 
-    height: auto;
+    height: 24px;
     transition: transform 0.3s ease; 
 }
 
 #icon-social:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
     cursor: pointer;
+}
+
+.social-link {
+    color: #1a7c7c;
+    font-size: 10pt; 
+    text-decoration: none; 
+    font-weight: bold;
 }
 
 .texto { 
@@ -175,6 +191,21 @@ h2 {
     flex-direction: column;
 }
 
+.categoria-titulo-container {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    width: 100%;
+    margin-top: 15px;
+}
+
+.categoria-titulo {
+    font-size: 10pt;
+    color: #1a7c7c; 
+    margin: 0; 
+    text-align: left;
+    font-weight: bold;
+}
 
 .icones-grid {
     display: grid;
@@ -188,15 +219,6 @@ h2 {
     flex-direction: column;
     align-items: center; 
     text-align: center;
-}
-
-.categoria-titulo {
-    font-size: 10pt;
-    color: #1a7c7c; 
-    margin: 15px 0 0 0; 
-    text-align: left;
-    font-weight: bold;
-    width: 100%;
 }
 
 .label-habilidade {
