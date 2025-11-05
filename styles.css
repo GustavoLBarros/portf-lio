@@ -6,7 +6,7 @@ html {
 }
 
 body { 
-    background: linear-gradient(135deg, #ffffff 0%, #d4f9ff 100%);
+    background: linear-gradient(135deg, #0f0f0f 0%, #0e0e0e 100%);
     color: #1a1a1a; 
     font-family: 'Sora', sans-serif; 
     min-height: 100vh;
@@ -83,7 +83,8 @@ header {
 }
 
 #foto:hover { 
-    cursor: default; /* Remove o cursor de link, já que o efeito 3D já é o hover */
+    cursor: default; 
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3); 
 } 
 
 .sociais {
@@ -104,6 +105,7 @@ header {
     width: 24px; 
     height: 24px;
     transition: transform 0.3s ease; 
+    filter: invert(100%);
 }
 
 #icon-social:hover {
@@ -137,20 +139,24 @@ a:hover{
 h1 { 
     margin-top: 0%; 
     font-size: 32pt;
-    color: #0a1b31; 
+    color: #f7f7f7; 
 } 
 
 h3 { 
     margin: 0%;
-    color: #1a7c7c; 
+    color: #0fa1a1; 
     font-weight: bold; 
     font-size: 16pt;
 } 
 
+h4{
+    color: #f7f7f7;
+}
+
 #button{
-    color: #1a7c7c;
+    color: #0fa1a1;
     padding: 2%;
-    border: solid 1px #1a7c7c;
+    border: solid 1px #0fa1a1;
     border-radius: 4px;
     display: block;
     text-align: center;
@@ -158,7 +164,7 @@ h3 {
 }
 
 #button:hover {
-    background-color: #1a7c7c;
+    background-color: #0fa1a1;
     border-radius: 4px;
     color: #fff; 
     transition: ease-in-out 300ms;
@@ -167,18 +173,18 @@ h3 {
 p {
     font-size: 14pt; 
     font-family: 'Sora', sans-serif; 
-    color: #1a1a1a; 
+    color: #f7f7f7; 
 }
 
 h5 { 
     font-weight: lighter;
     font-size: 14pt;
-    color: #0a1b31; 
+    color: #f7f7f7; 
 }
 
 h2 {
     font-size: 20px;
-    color: #0a1b31; 
+    color: #f7f7f7; 
 }
 
 .menuLateral { 
@@ -204,7 +210,7 @@ h2 {
     
     border-radius: 16px; 
     padding: 24px;
-    color: #0a1b31; 
+    color: #f7f7f7; 
     width: 220px; 
     height: auto; 
     gap: 12px;
@@ -223,7 +229,7 @@ h2 {
 
 .categoria-titulo {
     font-size: 10pt;
-    color: #1a7c7c; 
+    color: #0fa1a1; 
     margin: 0; 
     text-align: left;
     font-weight: bold;
@@ -246,7 +252,7 @@ h2 {
 .label-habilidade {
     font-size: 8pt;
     margin-top: 4px;
-    color: #1a1a1a; 
+    color: #f7f7f7; 
     font-weight: 500;
 }
 
@@ -329,7 +335,7 @@ h2 {
 }
 
 #projeto3:hover{
-    box-shadow: 0 15px 30px rgba(0, 255, 42, 0.3); 
+    box-shadow: 0 15px 30px rgba(30, 255, 124, 0.3); 
 }
 
 .projeto-card img {
