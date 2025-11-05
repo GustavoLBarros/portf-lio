@@ -241,6 +241,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+#projeto1:hover, #projeto2:hover{
+    cursor: none; 
+    transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .titulo-projeto {
