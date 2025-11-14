@@ -6,7 +6,7 @@ html {
 }
 
 body { 
-    background: linear-gradient(135deg, #0f0f0f 0%, #0e0e0e 100%);
+    background: linear-gradient(135deg, #f3f3f3 0%, #dddddd 100%);
     color: #1a1a1a; 
     font-family: 'Sora', sans-serif; 
     min-height: 100vh;
@@ -105,7 +105,6 @@ header {
     width: 24px; 
     height: 24px;
     transition: transform 0.3s ease; 
-    filter: invert(100%);
 }
 
 #icon-social:hover {
@@ -139,7 +138,7 @@ a:hover{
 h1 { 
     margin-top: 0%; 
     font-size: 32pt;
-    color: #f7f7f7; 
+    color: #1a1a1a; 
 } 
 
 h3 { 
@@ -150,7 +149,7 @@ h3 {
 } 
 
 h4{
-    color: #f7f7f7;
+    color: #1a1a1a;
 }
 
 #button{
@@ -173,18 +172,18 @@ h4{
 p {
     font-size: 14pt; 
     font-family: 'Sora', sans-serif; 
-    color: #f7f7f7; 
+    color: #1a1a1a; 
 }
 
 h5 { 
     font-weight: lighter;
     font-size: 14pt;
-    color: #f7f7f7; 
+    color: #1a1a1a; 
 }
 
 h2 {
     font-size: 20px;
-    color: #f7f7f7; 
+    color: #1a1a1a; 
 }
 
 .menuLateral { 
@@ -210,7 +209,7 @@ h2 {
     
     border-radius: 16px; 
     padding: 24px;
-    color: #f7f7f7; 
+    color: #1a1a1a; 
     width: 220px; 
     height: auto; 
     gap: 12px;
@@ -252,7 +251,7 @@ h2 {
 .label-habilidade {
     font-size: 8pt;
     margin-top: 4px;
-    color: #f7f7f7; 
+    color: #1a1a1a; 
     font-weight: 500;
 }
 
