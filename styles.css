@@ -329,6 +329,10 @@ h2 {
     box-shadow: 0 15px 30px rgba(30, 255, 124, 0.3); 
 }
 
+#projeto4:hover{
+    box-shadow: 0 15px 30px rgba(200, 255, 0, 0.3); 
+}
+
 .projeto-card img {
     max-width: 100%;
     height: auto;
