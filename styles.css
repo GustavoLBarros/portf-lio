@@ -8,7 +8,7 @@ html {
 body { 
     background: linear-gradient(135deg, #f3f3f3 0%, #dddddd 100%);
     color: #1a1a1a; 
-    font-family: 'Sora', sans-serif; 
+    font-family: 'Manrope', sans-serif; 
     min-height: 100vh;
     position: relative; 
     width: 100%;
@@ -51,25 +51,24 @@ header {
 }
 
 #foto { 
-    width: 268px; 
+    width: 200px; 
     height: 268px;
     border-radius: 16px;
     object-fit: cover; 
     object-position: top;
-    position: relative; /* Necessário para o ::before */
-    overflow: hidden; /* Garante que o efeito não vaze */
-    transform-style: preserve-3d; /* Para o efeito 3D */
-    transition: transform 0.2s ease-out; /* Transição para resetar o efeito */
-    perspective: 1000px; /* Perspectiva para o 3D */
+    position: relative; 
+    overflow: hidden; 
+    transform-style: preserve-3d; 
+    transition: transform 0.2s ease-out; 
+    perspective: 1000px; 
 } 
 
-/* Efeito Mouse Tracker na Foto */
 #foto::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 200%; /* Área grande de brilho */
+    width: 200%; 
     height: 200%;
     opacity: 0;
     pointer-events: none;
@@ -79,7 +78,7 @@ header {
 }
 
 #foto:hover::before {
-    opacity: 1; /* O brilho aparece no hover */
+    opacity: 1; 
 }
 
 #foto:hover { 
@@ -113,14 +112,14 @@ header {
 }
 
 .social-link, a { 
-    color: #1a7c7c;
+    color: #1a1a1a;
     font-size: 10pt; 
     text-decoration: none; 
     font-weight: bold;
 } 
 
 a:hover{
-    color: #116363;
+    color: #808080;
 }
 
 .texto { 
@@ -132,7 +131,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Manrope', sans-serif;
 } 
 
 h1 { 
@@ -143,7 +142,7 @@ h1 {
 
 h3 { 
     margin: 0%;
-    color: #0fa1a1; 
+    color: #333; 
     font-weight: bold; 
     font-size: 16pt;
 } 
@@ -153,25 +152,25 @@ h4{
 }
 
 #button{
-    color: #0fa1a1;
+    color: #fff;
+    background-color: #1a1a1a;
     padding: 2%;
-    border: solid 1px #0fa1a1;
-    border-radius: 4px;
+    border-radius: 50px;
     display: block;
     text-align: center;
     margin-top: 16px;
 }
 
 #button:hover {
-    background-color: #0fa1a1;
-    border-radius: 4px;
+    background-color: #1a1a1ae8;
+    border-radius: 50px;
     color: #fff; 
     transition: ease-in-out 300ms;
 }
 
 p {
     font-size: 14pt; 
-    font-family: 'Sora', sans-serif; 
+    font-family: 'Manrope', sans-serif; 
     color: #1a1a1a; 
 }
 
@@ -205,7 +204,7 @@ h2 {
     width: 220px; 
     height: auto; 
     gap: 12px;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Manrope', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -220,7 +219,7 @@ h2 {
 
 .categoria-titulo {
     font-size: 10pt;
-    color: #0fa1a1; 
+    color: #1a1a1a; 
     margin: 0; 
     text-align: left;
     font-weight: bold;
@@ -248,17 +247,11 @@ h2 {
 }
 
 .card3 { 
-    background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(12px); 
-    -webkit-backdrop-filter: blur(12px); 
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.3); 
     max-width: 800px;
     width: 100%;
     height: auto; 
     border-radius: 16px; 
-    padding: 24px; 
-    font-family: 'Sora', sans-serif;
-    color: #0a1b31; 
+    font-family: 'Manrope', sans-serif;
 }
 
 #icon {
@@ -272,7 +265,7 @@ h2 {
     transform: scale(1.2); 
 }
 
-.projeto-card { /* Classe comum para todos os projetos */
+.projeto-card { 
     background: #fff; 
     padding: 2px; 
     background-clip: padding-box, border-box; 
@@ -282,18 +275,17 @@ h2 {
     width: 100%; 
     height: auto;
     border-radius: 16px;
-    position: relative; /* Essencial para o ::before e transform 3D */
+    position: relative; 
     overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d; /* Para o efeito 3D */
-    transition: transform 0.2s ease-out; /* Transição para resetar o efeito */
-    perspective: 1000px; /* Perspectiva para o 3D */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra padrão */
+    transform-style: preserve-3d; 
+    transition: transform 0.2s ease-out; 
+    perspective: 1000px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
-/* Efeito Mouse Tracker nos Projetos */
 .projeto-card::before {
     content: '';
     position: absolute;
@@ -309,14 +301,13 @@ h2 {
 }
 
 .projeto-card:hover::before {
-    opacity: 1; /* O brilho aparece no hover */
+    opacity: 1; 
 }
 
 .projeto-card:hover {
-    cursor: default; /* Remove o cursor de link padrão */
+    cursor: default; 
 }
 
-/* Sombras específicas ao passar o mouse, mantendo o transform dinâmico */
 #projeto1:hover{
     box-shadow: 0 15px 30px rgba(255, 123, 0, 0.3); 
 }
@@ -350,10 +341,7 @@ h2 {
 
 .card3 a:not(#button) {
     display: block;
-    margin-bottom: 4px;
 }
-
-/* --- ESTILOS PARA GALERIA DE DOWNLOADS (CORREÇÃO APLICADA AQUI) --- */
 
 .galeria-downloads {
     display: grid;
@@ -366,12 +354,12 @@ h2 {
     display: block;
     width: 100%;
     margin: 0;
-    text-align: center; /* Centraliza a imagem no meio da coluna do grid */
+    text-align: center; 
 }
 
 .galeria-downloads img {
-    /* REGRA PADRÃO DE 100PX APLICADA PARA TODAS AS TELAS */
-    width: 320px;
+    width: 100%;
+    max-width: 150px; 
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -379,9 +367,6 @@ h2 {
 .galeria-downloads img:hover {
     transform: scale(1.05);
 }
-
-
-/* --- RESPONSIVIDADE (MEDIA QUERIES) --- */
 
 @media (max-width: 992px) {
     .container {
