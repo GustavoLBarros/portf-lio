@@ -353,6 +353,34 @@ h2 {
     margin-bottom: 4px;
 }
 
+/* --- ESTILOS PARA GALERIA DE DOWNLOADS (CORREÇÃO APLICADA AQUI) --- */
+
+.galeria-downloads {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.galeria-downloads a {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center; /* Centraliza a imagem no meio da coluna do grid */
+}
+
+.galeria-downloads img {
+    /* REGRA PADRÃO DE 100PX APLICADA PARA TODAS AS TELAS */
+    width: 320px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.galeria-downloads img:hover {
+    transform: scale(1.05);
+}
+
+
 /* --- RESPONSIVIDADE (MEDIA QUERIES) --- */
 
 @media (max-width: 992px) {
