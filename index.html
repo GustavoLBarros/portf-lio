@@ -10,7 +10,30 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
     </head>
+    
     <body>
+        <div id="modal-bg" class="modal-bg">
+            <div class="modal">
+                <h2>Contato</h2>
+
+                <p>Você pode falar comigo por aqui:</p>
+                <br>
+
+                <p><strong>Email:</strong> gustavo.barros13@fatec.sp.gov.br</p>
+                <p><strong>WhatsApp:</strong> (19) 99309-2795</p>
+
+                <button class="close" id="close-modal">Fechar</button>
+            </div>
+        </div>
+        <header class="topo">
+            <div class="header-container">
+                <h2 class="logo">Gustavo Lopes de Barros</h2>
+                <nav class="nav-menu">
+                    <a href="#" id="btn-contato">Contato</a>
+                </nav>
+            </div>
+        </header>
+
         <header>
             <div class="container">
                 <div class="foto-social">
@@ -111,6 +134,30 @@
                 <h2 style="margin-bottom: 24px;">Meus projetos</h2>
 
                 <div class="titulo-projeto">
+                    <h4 style="margin-bottom: 8px;">Helena Lopes - Médica da Família (Landing Page)</h4>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <img src="src/imgs/check.svg" style="height: 24px;" alt="finalizado">
+                        <h4>Finalizado</h4>
+                    </div>
+                </div>
+                <div id="projeto5" class="projeto-card track-mouse-3d">
+                    <img src="src/imgs/projeto5.png" alt="projeto5">
+                </div>
+                <a href="https://helenalopes.vercel.app/" target="_blank" id="button">Clique aqui para ver o Site</a>
+
+                <h2 style="margin-top: 64px;">Imagens do Projeto (clique para baixar)</h2>
+                <div class="galeria-downloads">
+                    <a href="src/imgs/imagem9.png" download>
+                        <img src="src/imgs/imagem9.png" alt="Download Imagem 1">
+                    </a>
+                    <a href="src/imgs/imagem10.png" download>
+                        <img src="src/imgs/imagem10.png" alt="Download Imagem 2">
+                    </a>
+                </div>
+
+                <hr style="border-color: #eee; margin-block:40px;">
+
+                <div class="titulo-projeto">
                     <h4 style="margin-bottom: 8px;">Doxa - Publicidade Urbana (Branding-UX/UI)</h4>
                     <div style="display: flex; align-items: center; gap: 8px;">
                         <img src="src/imgs/progress.svg" style="height: 24px;" alt="em andamento">
@@ -196,10 +243,37 @@
                 </div>
                 <a href="https://www.figma.com/proto/1pUOMwejiuxC20EKZV3OUi/Case-Study-Presentation-Template-%F0%9F%94%AE--Community-?node-id=1-266&p=f&t=Zl0ATU86yyhpRO53-0&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank" id="button">Clique aqui para ver o Case Study</a>
 
+                <hr style="border-color: #eee; margin-block:40px;">
             </div>
         </div>
 
         <script>
+            // Referências corrigidas: modal é o modal-bg, e o botão de fechar é close-modal
+            const modalBg = document.getElementById("modal-bg");
+            const btnContato = document.getElementById("btn-contato");
+            const btnFechar = document.getElementById("close-modal");
+
+            // Abrir modal ao clicar no nav
+            btnContato.addEventListener("click", (e) => {
+                e.preventDefault();
+                // Adiciona a classe 'mostrar' para o CSS exibir o modal
+                modalBg.classList.add("mostrar");
+            });
+
+            // Fechar modal ao clicar no botão 'Fechar'
+            btnFechar.addEventListener("click", () => {
+                // Remove a classe 'mostrar' para o CSS ocultar o modal
+                modalBg.classList.remove("mostrar");
+            });
+
+            // Fechar modal ao clicar no overlay (fundo escurecido)
+            modalBg.addEventListener("click", (e) => {
+                // Verifica se o clique foi diretamente no fundo (modal-bg) e não dentro do conteúdo do modal
+                if (e.target === modalBg) {
+                    modalBg.classList.remove("mostrar");
+                }
+            });
+
             document.addEventListener('DOMContentLoaded', () => {
                 const elementsToTrack = document.querySelectorAll('.track-mouse-3d');
                 const rotationFactor = 10;
