@@ -2,18 +2,18 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
-body { 
+body {
     background: linear-gradient(135deg, #f3f3f3 0%, #dddddd 100%);
-    color: #1a1a1a; 
-    font-family: 'Manrope', sans-serif; 
+    color: #1a1a1a;
+    font-family: 'Manrope', sans-serif;
     min-height: 100vh;
-    position: relative; 
+    position: relative;
     width: 100%;
-    overflow-x: hidden; 
-} 
+    overflow-x: hidden;
+}
 
 body::before {
     content: '';
@@ -22,53 +22,53 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; 
+    overflow: hidden;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48ZmlsdGVyIGlkPSJuIj48ZmVDb2xvck1hdHJpeCBpbj0ibGlnaHRpbmdHcmF5IiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMSAwIDAgMCAwIDAgMSAwIDAgMCAwIDAgMSAwIDAgMCAwIDAgMSAwIDAiLz48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC41IiBudW1PY3RhdmVlcz0iMiIgc3RpdGNoVGlsZXM9Im5vcm1hbGl6ZSIvPjxmZUNvbXBvc2l0ZSBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJ0dXJidWxlbmNlIiBvcGVyYXRvcj0ibGlnaHRlbiIgcmVzdWx0PSJuIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZmZmZiIgZmlsdGVyPSJ1cmwoI24pIiBvcGFjaXR5PSIwLjA4Ii8+PC9zdmc=');
-    background-size: 100px; 
-    opacity: 0.8; 
-    pointer-events: none; 
-    z-index: -1; 
+    background-size: 100px;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: -1;
 }
 
-header { 
-    padding: 24px; 
-} 
+header {
+    padding: 24px;
+}
 
-.container { 
-    display: flex; 
-    flex-direction: row; 
-    align-items: flex-start; 
-    gap: 16px; 
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
     max-width: 1200px;
     margin: 0 auto;
-} 
+}
 
 .foto-social {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 8px; 
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
-#foto { 
-    width: 200px; 
+#foto {
+    width: 200px;
     height: 268px;
     border-radius: 16px;
-    object-fit: cover; 
+    object-fit: cover;
     object-position: top;
-    position: relative; 
-    overflow: hidden; 
-    transform-style: preserve-3d; 
-    transition: transform 0.2s ease-out; 
-    perspective: 1000px; 
-} 
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease-out;
+    perspective: 1000px;
+}
 
 #foto::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 200%; 
+    width: 200%;
     height: 200%;
     opacity: 0;
     pointer-events: none;
@@ -78,13 +78,13 @@ header {
 }
 
 #foto:hover::before {
-    opacity: 1; 
+    opacity: 1;
 }
 
-#foto:hover { 
-    cursor: default; 
-    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3); 
-} 
+#foto:hover {
+    cursor: default;
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3);
+}
 
 .sociais {
     display: flex;
@@ -94,16 +94,16 @@ header {
 
 .social-item {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     gap: 4px;
     text-align: center;
 }
 
 #icon-social {
-    width: 24px; 
+    width: 24px;
     height: 24px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 #icon-social:hover {
@@ -111,41 +111,41 @@ header {
     cursor: pointer;
 }
 
-.social-link, a { 
+.social-link, a {
     color: #1a1a1a;
-    font-size: 10pt; 
-    text-decoration: none; 
+    font-size: 10pt;
+    text-decoration: none;
     font-weight: bold;
-} 
+}
 
 a:hover{
     color: #808080;
 }
 
-.texto { 
-    max-width: 800px; 
+.texto {
+    max-width: 800px;
     width: 100%;
-    height: auto; 
-    border-radius: 16px; 
-    padding: 24px; 
+    height: auto;
+    border-radius: 16px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     font-family: 'Manrope', sans-serif;
-} 
+}
 
-h1 { 
-    margin-top: 0%; 
+h1 {
+    margin-top: 0%;
     font-size: 32pt;
-    color: #1a1a1a; 
-} 
+    color: #1a1a1a;
+}
 
-h3 { 
+h3 {
     margin: 0%;
-    color: #333; 
-    font-weight: bold; 
+    color: #333;
+    font-weight: bold;
     font-size: 16pt;
-} 
+}
 
 h4{
     color: #1a1a1a;
@@ -164,45 +164,46 @@ h4{
 #button:hover {
     background-color: #1a1a1ae8;
     border-radius: 50px;
-    color: #fff; 
+    color: #fff;
     transition: ease-in-out 300ms;
+    transform: scale(1.01);
 }
 
 p {
-    font-size: 14pt; 
-    font-family: 'Manrope', sans-serif; 
-    color: #1a1a1a; 
+    font-size: 14pt;
+    font-family: 'Manrope', sans-serif;
+    color: #1a1a1a;
 }
 
-h5 { 
+h5 {
     font-weight: lighter;
     font-size: 14pt;
-    color: #1a1a1a; 
+    color: #1a1a1a;
 }
 
 h2 {
     font-size: 20px;
-    color: #1a1a1a; 
+    color: #1a1a1a;
 }
 
-.menuLateral { 
-    display: flex; 
+.menuLateral {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px 24px 24px; 
-    gap: 16px; 
-} 
+    padding: 0 24px 24px 24px;
+    gap: 16px;
+}
 
-.coluna-esquerda { 
-    display: flex; 
-    flex-direction: column; 
-    gap: 16px; 
-} 
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 .card1 {
-    color: #1a1a1a; 
-    width: 220px; 
-    height: auto; 
+    color: #1a1a1a;
+    width: 220px;
+    height: auto;
     gap: 12px;
     font-family: 'Manrope', sans-serif;
     display: flex;
@@ -211,23 +212,23 @@ h2 {
 
 .categoria-titulo-container {
     display: flex;
-    align-items: center; 
-    gap: 8px; 
+    align-items: center;
+    gap: 8px;
     width: 100%;
     margin-top: 15px;
 }
 
 .categoria-titulo {
     font-size: 10pt;
-    color: #1a1a1a; 
-    margin: 0; 
+    color: #1a1a1a;
+    margin: 0;
     text-align: left;
     font-weight: bold;
 }
 
 .icones-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px 5px;
     width: 100%;
 }
@@ -235,55 +236,55 @@ h2 {
 .item-habilidade {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     text-align: center;
 }
 
 .label-habilidade {
     font-size: 8pt;
     margin-top: 4px;
-    color: #1a1a1a; 
+    color: #1a1a1a;
     font-weight: 500;
 }
 
-.card3 { 
+.card3 {
     max-width: 800px;
     width: 100%;
-    height: auto; 
-    border-radius: 16px; 
+    height: auto;
+    border-radius: 16px;
     font-family: 'Manrope', sans-serif;
 }
 
 #icon {
     width: 24px;
     height: 24px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 #icon:hover {
-    cursor: pointer; 
-    transform: scale(1.2); 
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
-.projeto-card { 
-    background: #fff; 
-    padding: 2px; 
-    background-clip: padding-box, border-box; 
-    background-origin: border-box; 
-    border: transparent; 
+.projeto-card {
+    background: #fff;
+    padding: 2px;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: transparent;
     margin-bottom: 32px;
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-radius: 16px;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d; 
-    transition: transform 0.2s ease-out; 
-    perspective: 1000px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease-out;
+    perspective: 1000px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .projeto-card::before {
@@ -291,7 +292,7 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 150%; 
+    width: 150%;
     height: 150%;
     opacity: 0;
     pointer-events: none;
@@ -301,27 +302,27 @@ h2 {
 }
 
 .projeto-card:hover::before {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .projeto-card:hover {
-    cursor: default; 
+    cursor: default;
 }
 
 #projeto1:hover{
-    box-shadow: 0 15px 30px rgba(255, 123, 0, 0.3); 
+    box-shadow: 0 15px 30px rgba(255, 123, 0, 0.3);
 }
 
 #projeto2:hover{
-    box-shadow: 0 15px 30px rgba(255, 51, 0, 0.3); 
+    box-shadow: 0 15px 30px rgba(255, 51, 0, 0.3);
 }
 
 #projeto3:hover{
-    box-shadow: 0 15px 30px rgba(30, 255, 124, 0.3); 
+    box-shadow: 0 15px 30px rgba(30, 255, 124, 0.3);
 }
 
 #projeto4:hover{
-    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.3); 
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.3);
 }
 
 .projeto-card img {
@@ -346,7 +347,7 @@ h2 {
 .galeria-downloads {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 8px; 
     margin-top: 24px;
 }
 
@@ -354,18 +355,18 @@ h2 {
     display: block;
     width: 100%;
     margin: 0;
-    text-align: center; 
+    text-align: center;
 }
 
 .galeria-downloads img {
     width: 100%;
-    max-width: 150px; 
+    border-radius: 16px;
     height: auto;
     transition: transform 0.3s ease;
 }
 
 .galeria-downloads img:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 @media (max-width: 992px) {
@@ -378,7 +379,7 @@ h2 {
 
     .foto-social {
         width: 100%;
-        max-width: 268px; 
+        max-width: 268px;
     }
 
     .texto {
@@ -393,7 +394,7 @@ h2 {
     .texto h3 {
         font-size: 14pt;
     }
-    
+
     .texto p {
         text-align: left;
     }
@@ -412,7 +413,7 @@ h2 {
         width: 100%;
         max-width: 400px;
     }
-    
+
     .card3 {
         max-width: 100%;
     }
@@ -431,7 +432,7 @@ h2 {
         width: 180px;
         height: 180px;
     }
-    
+
     .sociais {
         padding-top: 8px;
     }
@@ -447,7 +448,7 @@ h2 {
     .texto p {
         font-size: 12pt;
     }
-    
+
     .menuLateral {
         padding: 16px;
     }
@@ -455,7 +456,7 @@ h2 {
     .card1 {
         padding: 16px;
     }
-    
+
     .card3 {
         padding: 16px;
     }
@@ -463,20 +464,20 @@ h2 {
     .icones-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .titulo-projeto {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .titulo-projeto div {
         margin-top: 4px;
     }
-    
+
     .card3 h4 {
         font-size: 10pt;
     }
-    
+
     #button {
         font-size: 10pt;
         padding: 4%;
