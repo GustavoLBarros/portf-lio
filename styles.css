@@ -38,10 +38,10 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding-inline: 24px;
-    display: flex; /* Mantido como flex para o layout original */
-    flex-direction: row; /* Mantido como row para o layout original */
-    align-items: flex-start; /* Mantido para o layout original */
-    gap: 16px; /* Mantido para o layout original */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .foto-social {
@@ -49,7 +49,6 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    /* margin: 0 auto 32px; <-- REMOVIDO para não centralizar */
 }
 
 #foto {
@@ -134,7 +133,6 @@ a:hover{
     flex-direction: column;
     gap: 8px;
     font-family: 'Manrope', sans-serif;
-    /* margin-bottom: 32px; <-- REMOVIDO para não centralizar */
 }
 
 h1 {
@@ -157,11 +155,14 @@ h4{
 #button{
     color: #fff;
     background-color: #1a1a1a;
-    padding: 2%;
-    border-radius: 50px;
-    display: block;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     text-align: center;
     margin-top: 16px;
+    gap: 8px; 
 }
 
 #button:hover {
@@ -170,6 +171,11 @@ h4{
     color: #fff;
     transition: ease-in-out 300ms;
     transform: scale(1.01);
+}
+
+#button i { 
+    font-size: 18px; 
+    margin-right: 0; 
 }
 
 p {
@@ -203,21 +209,21 @@ h2 {
 .secao-habilidades {
     width: 100%; 
     display: flex;
-    flex-direction: row; /* Mantém em linha */
-    flex-wrap: nowrap; /* Impede quebras de linha */
-    justify-content: flex-start; /* Alinha no início */
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
     gap: 32px; 
     padding: 24px 0;
     border-top: 1px solid #ddd;
     box-sizing: border-box;
-    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    overflow-x: auto; 
     padding-bottom: 24px;
 }
 
 .card1 {
     color: #1a1a1a;
-    width: 280px; /* Largura fixa para que fiquem lado a lado */
-    flex-shrink: 0; /* Impede que os cards encolham */
+    width: 280px; 
+    flex-shrink: 0; 
     gap: 12px;
     font-family: 'Manrope', sans-serif;
     display: flex;
@@ -398,13 +404,11 @@ h2 {
     .foto-social {
         width: 100%;
         max-width: 268px;
-        /* margin-bottom: 0; <-- REMOVIDO */
     }
 
     .texto {
         padding: 0;
         max-width: 100%;
-        /* margin-bottom: 0; <-- REMOVIDO */
     }
 
     .texto h1 {
@@ -526,7 +530,6 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     padding-inline: 24px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -597,4 +600,39 @@ h2 {
 
 .modal button.close:hover {
     background-color: #333;
+}
+
+/* NOVO SELETOR: Aplica layout de coluna e espaçamento aos dois botões */
+.button-group {
+    display: flex;
+    gap: 16px; 
+}
+
+/* CORRIGIDO: Aplica estilos aos dois botões, garantindo que ocupem o mesmo espaço */
+#button2, #button3 {
+    background-color: transparent;
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    flex: 1; /* Faz o botão ocupar 50% do espaço do grupo */
+    margin-top: 16px; /* Garante que o espaçamento seja controlado pelo .button-group */
+}
+
+#button2:hover, #button3:hover {
+    background-color: #1a1a1ae8;
+    border-radius: 50px;
+    color: #fff;
+    transition: ease-in-out 300ms;
+    transform: scale(1.01);
+}
+
+#button2 i, #button3 i { 
+    font-size: 18px; 
+    margin-right: 0; 
 }
