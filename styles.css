@@ -342,11 +342,15 @@ h2 {
 }
 
 #projeto4:hover{
-    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(161, 255, 39, 0.3);
 }
 
 #projeto5:hover{
     box-shadow: 0 15px 30px rgba(110, 0, 0, 0.3);
+}
+
+#projeto6:hover{
+    box-shadow: 0 15px 30px rgba(0, 156, 39, 0.3);
 }
 
 .projeto-card img {
